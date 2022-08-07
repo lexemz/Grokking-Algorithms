@@ -5,10 +5,10 @@ func findSmallest(array: [Int]) -> Int {
     var smallest = array[0]
     var smallestIndex = 0
     
-    for i in 0 ..< array.count {
-        if array[i] < smallest {
-            smallest = array[i]
-            smallestIndex = i
+    for (index, element) in array.enumerated() {
+        if element < smallest {
+            smallest = element
+            smallestIndex = index
         }
     }
     return smallestIndex
