@@ -1,4 +1,3 @@
-
 func qsort(array: [Int]) -> [Int] {
   // basic
   if array.count < 2 { return array }
