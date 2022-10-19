@@ -1,10 +1,10 @@
 func qsort(array: [Int]) -> [Int] {
   // basic
   if array.count < 2 { return array }
-  
+
   // recursive
-  let pivot = array[0]
-  
+  let pivot = array[array.count / 2]
+
   let less = array.filter { $0 < pivot }
   let equal = array.filter { $0 == pivot }
   let greater = array.filter { $0 > pivot }
